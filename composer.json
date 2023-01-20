@@ -1,0 +1,11 @@
+{
+    "name": "saeedncc/object-mapper",
+    "description": "object mapper for php from ymal file",
+    "autoload": {
+        "psr-4": {
+            "saeedncc\\ObjectMapper\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,23 @@
+# structure object user 
+
+property: 
+ - name: 'id'
+   map: 'identify'
+   type: 'integer'
+
+ - name: 'frist_name'
+   map: 'name'
+   type: 'string'
+
+ - name: 'last_name'
+   map: 'lastname'
+   type: 'string'
+   
+   
+ - name: 'age'
+   map: 'old'
+   type: 'integer'
+   
+ - name: 'address'
+   map: 'address'
+   type: 'string'

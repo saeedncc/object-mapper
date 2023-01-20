@@ -1,0 +1,16 @@
+# structure object book 
+   
+property: 
+
+ - name: 'title'
+   map: 'titlebook'
+   type: 'string'
+
+ - name: 'author'
+   map: 'authorbook'
+   type: 'string'
+   
+   
+ - name: 'pages'
+   map: 'numpage'
+   type: 'integer' 
