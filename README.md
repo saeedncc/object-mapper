@@ -14,6 +14,7 @@ Define ymal file for custom object like this:
 
 user.yml
 
+```ymal
 property: 
  - name: 'id'
    map: 'identify'
@@ -35,9 +36,9 @@ property:
  - name: 'address'
    map: 'address'
    type: 'string'
+```
 
 Get response json or xml from external api or other and convert to object
-
 
 
 
