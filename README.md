@@ -44,6 +44,10 @@ Get response json or xml from external api or other and convert to object
 
 ```php
 
+require 'vendor/autoload.php';
+
+use \saeedncc\ObjectMapper\ObjectMapper;
+
 $pathYmal='./yaml/user.yml';
 
 $xml = <<<XML
