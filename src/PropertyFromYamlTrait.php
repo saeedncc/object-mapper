@@ -3,6 +3,8 @@ namespace saeedncc\ObjectMapper;
 
 use \saeedncc\ObjectMapper\Property\IntegerProperty;
 use \saeedncc\ObjectMapper\Property\StringProperty;
+use \saeedncc\ObjectMapper\Property\ArrayProperty;
+use \saeedncc\ObjectMapper\Property\ObjectProperty;
 
 use \saeedncc\ObjectMapper\Exceptions\NotfFoundPropertyClassException;
 
@@ -24,6 +26,14 @@ trait PropertyFromYamlTrait
 			}else if($field['type']=='string'){
 				
 				$properties[]=new StringProperty($field['name'],$field['map']);
+				
+			}else if($field['type']=='array'){
+				
+				$properties[]=new ArrayProperty($field['name'],$field['map']);
+				
+			}else if($field['type']=='object'){
+				
+				$properties[]=new ObjectProperty($field['name'],$field['map'],$field['property']);
 			
 			}else{
 				throw new NotfFoundPropertyClassException($field['type']);

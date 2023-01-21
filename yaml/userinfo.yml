@@ -1,0 +1,55 @@
+# structure object user 
+
+property: 
+ - name: 'id'
+   map: 'identify'
+   type: 'integer'
+
+ - name: 'frist_name'
+   map: 'name'
+   type: 'string'
+
+ - name: 'last_name'
+   map: 'lastname'
+   type: 'string'
+   
+   
+ - name: 'age'
+   map: 'old'
+   type: 'integer'
+   
+ - name: 'address'
+   map: 'address'
+   type: 'string'
+   
+ - name: 'info'
+   map: 'information' 
+   type: 'object'
+   property:
+    - name: 'mobile'
+      map: 'mobilenumber'
+      type: 'string'
+      
+    - name: 'tel'
+      map: 'telphon'
+      type: 'string'
+
+    - name: 'email'
+      map: 'mail'
+      type: 'string'      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

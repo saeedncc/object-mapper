@@ -17,17 +17,11 @@ class PropertyFromYaml
 	*/
 	public $data;
 	
-	public function __construct(string $path)
-	{
-		$this->load($path);
-		
-	}
-	
 	/**
 	* load data from yaml file 
 	* @param string $path
 	*/
-	protected function load(string $path):void
+	public function loadData(string $path):void
 	{
 		$data=Spyc::YAMLLoad($path);
 		
@@ -36,7 +30,16 @@ class PropertyFromYaml
 			throw new NotfFoundYamlFileException($path);
 		}
 		
-		$this->data=$data['property'];
+		$this->setData($data['property']);
+	}
+	
+    /**
+	* set data 
+	* @param array $data
+	*/
+	public function setData(array $data):void
+	{
+		$this->data=$data;
 	}
 	
 
